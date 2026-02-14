@@ -41,15 +41,52 @@ const els = {
     noBtn: document.getElementById('no-btn'),
     hint: document.getElementById('hint'),
     heartsContainer: document.getElementById('hearts'),
-    confettiCanvas: document.getElementById('confetti-canvas')
+    confettiCanvas: document.getElementById('confetti-canvas'),
+    bgMusic: document.getElementById('bg-music'),
+    musicToggle: document.getElementById('music-toggle')
 };
+
+// ===== Music State =====
+let musicPlaying = false;
 
 // ===== Initialize =====
 document.addEventListener('DOMContentLoaded', () => {
     createFloatingHearts();
     setupEnvelope();
     setupButtons();
+    setupMusic();
 });
+
+// ===== Music Controls =====
+function setupMusic() {
+    els.musicToggle.addEventListener('click', toggleMusic);
+    
+    // Update button when music ends/plays
+    els.bgMusic.addEventListener('play', () => {
+        musicPlaying = true;
+        els.musicToggle.textContent = '🔊';
+    });
+    
+    els.bgMusic.addEventListener('pause', () => {
+        musicPlaying = false;
+        els.musicToggle.textContent = '🔇';
+    });
+}
+
+function toggleMusic() {
+    if (musicPlaying) {
+        els.bgMusic.pause();
+    } else {
+        els.bgMusic.play();
+    }
+}
+
+function startMusic() {
+    els.bgMusic.volume = 0.4; // Gentle volume
+    els.bgMusic.play().catch(() => {
+        // Autoplay blocked, that's okay
+    });
+}
 
 // ===== Floating Hearts Background =====
 function createFloatingHearts() {
@@ -95,6 +132,9 @@ function setupEnvelope() {
 
 function openEnvelope() {
     els.envelope.classList.add('opened');
+    
+    // Start the romantic music
+    startMusic();
     
     // Transition to letter after envelope opens
     setTimeout(() => {

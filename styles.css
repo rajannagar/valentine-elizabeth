@@ -472,3 +472,39 @@ body {
         padding-bottom: max(2rem, env(safe-area-inset-bottom));
     }
 }
+
+/* ===== Music Toggle Button ===== */
+.music-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background: linear-gradient(135deg, var(--rose-gold) 0%, var(--rose-gold-light) 100%);
+    color: var(--white);
+    font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0 4px 15px var(--shadow);
+    z-index: 1001;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.music-toggle:hover {
+    transform: scale(1.1);
+}
+
+.music-toggle:active {
+    transform: scale(0.95);
+}
+
+@supports (padding: max(0px)) {
+    .music-toggle {
+        bottom: max(20px, env(safe-area-inset-bottom));
+        right: max(20px, env(safe-area-inset-right));
+    }
+}
