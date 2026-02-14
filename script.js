@@ -119,7 +119,7 @@ function startTyping() {
             // Handle newlines
             if (char === '\n') {
                 els.typedText.innerHTML = els.typedText.innerHTML.replace('<span class="cursor"></span>', '') + 
-                    '<br><br><span class="cursor"></span>';
+                    '<br><span class="cursor"></span>';
             } else {
                 els.typedText.innerHTML = els.typedText.innerHTML.replace('<span class="cursor"></span>', '') + 
                     char + '<span class="cursor"></span>';
