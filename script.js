@@ -71,6 +71,12 @@ function setupMusic() {
         musicPlaying = false;
         els.musicToggle.textContent = '🔇';
     });
+    
+    // Fallback loop - restart if it ends (belt and suspenders)
+    els.bgMusic.addEventListener('ended', () => {
+        els.bgMusic.currentTime = 0;
+        els.bgMusic.play();
+    });
 }
 
 function toggleMusic() {
@@ -82,6 +88,7 @@ function toggleMusic() {
 }
 
 function startMusic() {
+    els.bgMusic.loop = true; // Ensure looping
     els.bgMusic.volume = 0.4; // Gentle volume
     els.bgMusic.play().catch(() => {
         // Autoplay blocked, that's okay
