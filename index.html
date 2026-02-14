@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>For Elizabeth 💕</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Floating Hearts Background -->
+    <div class="hearts-container" id="hearts"></div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Envelope Section -->
+        <section class="envelope-section" id="envelope-section">
+            <h1 class="title">You have a special message</h1>
+            <p class="subtitle">Tap to open</p>
+            
+            <div class="envelope" id="envelope">
+                <div class="envelope-flap"></div>
+                <div class="envelope-body">
+                    <div class="heart-seal">💌</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Letter Section (Hidden Initially) -->
+        <section class="letter-section hidden" id="letter-section">
+            <div class="letter">
+                <div class="letter-content">
+                    <p class="greeting">My Dearest Elizabeth,</p>
+                    <p class="letter-text" id="typed-text"></p>
+                    <p class="signature">Forever Yours,<br>Your Valentine 💕</p>
+                </div>
+            </div>
+            <button class="continue-btn" id="continue-btn">Continue →</button>
+        </section>
+
+        <!-- Question Section (Hidden Initially) -->
+        <section class="question-section hidden" id="question-section">
+            <h2 class="question-title">Elizabeth...</h2>
+            <h1 class="big-question">Will You Be My Valentine?</h1>
+            
+            <div class="buttons-container">
+                <button class="btn yes-btn" id="yes-btn">Yes! 💕</button>
+                <button class="btn no-btn" id="no-btn">No</button>
+            </div>
+            
+            <p class="hint" id="hint"></p>
+        </section>
+
+        <!-- Celebration Section (Hidden Initially) -->
+        <section class="celebration-section hidden" id="celebration-section">
+            <div class="celebration-content">
+                <h1 class="celebration-title">🎉 Yay! 🎉</h1>
+                <h2 class="celebration-subtitle">I knew you'd say yes!</h2>
+                <div class="big-heart">💕</div>
+                <p class="celebration-message">
+                    Happy Valentine's Day, Elizabeth!<br>
+                    I love you more than words can say.
+                </p>
+                <div class="hearts-shower" id="hearts-shower"></div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Confetti Canvas -->
+    <canvas id="confetti-canvas"></canvas>
+
+    <script src="script.js"></script>
+</body>
+</html>
