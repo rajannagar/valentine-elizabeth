@@ -2,9 +2,13 @@
 
 // ===== Configuration =====
 const CONFIG = {
-    loveMessage: `Every day with you feels like a beautiful adventure. Your smile lights up my world, your laugh is my favorite melody, and your love is the greatest gift I've ever received.
+    loveMessage: `Eight years. Eight beautiful, incredible years of building a life with you — and I still fall more in love with you every single day.
 
-From our first moment together to today, you've made my life infinitely more wonderful. I fall more in love with you every single day.
+You are not just my partner, you are my best friend, my rock, and the most amazing mother to our sweet Zoe. Watching you love her, guide her, and light up her world fills my heart in ways I never knew possible.
+
+Thank you for standing by me through everything — the highs, the lows, and every moment in between. Thank you for choosing us, every single day.
+
+And now, as we wait for our little boy to arrive in July, I can't help but feel overwhelmed with gratitude. You've given me the most beautiful family I could ever dream of, and I promise to spend the rest of my life making sure you know how loved you are.
 
 So my darling Elizabeth, I have one very important question to ask you...`,
     typingSpeed: 40,
