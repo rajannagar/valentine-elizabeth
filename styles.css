@@ -476,7 +476,7 @@ body {
 /* ===== Music Toggle Button ===== */
 .music-toggle {
     position: fixed;
-    bottom: 20px;
+    top: 20px;
     right: 20px;
     width: 50px;
     height: 50px;
@@ -504,7 +504,7 @@ body {
 
 @supports (padding: max(0px)) {
     .music-toggle {
-        bottom: max(20px, env(safe-area-inset-bottom));
+        top: max(20px, env(safe-area-inset-top));
         right: max(20px, env(safe-area-inset-right));
     }
 }
