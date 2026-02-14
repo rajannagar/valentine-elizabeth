@@ -1,4 +1,4 @@
-// ===== Valentine's Day Magic for Elizabeth =====
+// ===== Valentine's Day Magic for Jaanu =====
 
 // ===== Configuration =====
 const CONFIG = {
@@ -10,7 +10,7 @@ Thank you for standing by me through everything — the highs, the lows, and eve
 
 And now, as we wait for our little boy to arrive in July, I can't help but feel overwhelmed with gratitude. You've given me the most beautiful family I could ever dream of, and I promise to spend the rest of my life making sure you know how loved you are.
 
-So my darling Elizabeth, I have one very important question to ask you...`,
+So my darling Jaanu, I have one very important question to ask you...`,
     typingSpeed: 40,
     heartEmojis: ['💕', '💗', '💖', '💝', '💓', '❤️', '🌹', '✨'],
     noButtonMessages: [
